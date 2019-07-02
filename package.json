@@ -1,0 +1,20 @@
+{
+  "name": "Google_Books_Search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nimehjadallah/Google_Books_Search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nimehjadallah/Google_Books_Search/issues"
+  },
+  "homepage": "https://github.com/nimehjadallah/Google_Books_Search#readme"
+}
