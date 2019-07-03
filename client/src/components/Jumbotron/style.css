@@ -1,0 +1,18 @@
+.masthead {
+    color: white;
+    height: 50vh;
+    min-height: 100px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPXXJpwxzJb1d3FYWhYSa3OKLYrMW2fh6JgXh44DmZ6pwPcPC');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  h1{
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+    font-weight: bold;
+  }
