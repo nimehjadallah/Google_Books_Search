@@ -1,23 +1,21 @@
 import React from "react";
-// import Nav from "./components/Nav";
-// import SearchForm from "./components/SearchForm"
-import "./App.css"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Search from "./pages/Search";
+// import Results from "./pages/Results";
+// import Saved from "./pages/Saved";
+// import NoMatch from "./pages/NoMatch";
 
-function App() {
-  return (
-    // <Router>
-      <div>
-      
-        {/* <Switch>
-          <Route exact path="/" component={SearchBooks} />
-          <Route exact path="/saved" component={SaveBooks} />
-          <Route exact path="/saved/:id" component={SaveBooks} />
-          <Route component={NoMatch} /> 
-        </Switch>
-        <Footer /> */}
-      </div>
-    // </Router>
-  );
-}
+const App = () => (
+  <Router>
+    <div>
+      <Switch>
+        <Route exact path="/" component={Search} />
+        {/* <Route exact path="/results" component={Results} /> */}
+        {/* <Route exact path="/saved" component={Saved} /> */}
+        {/* <Route component={NoMatch} /> */}
+      </Switch>
+    </div>
+  </Router>
+);
 
 export default App;
