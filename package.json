@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/nimehjadallah/Google_Books_Search/issues"
   },
-  "homepage": "https://github.com/nimehjadallah/Google_Books_Search#readme"
+  "homepage": "https://github.com/nimehjadallah/Google_Books_Search#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.2"
+  }
 }
