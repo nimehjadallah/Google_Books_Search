@@ -1,21 +1,33 @@
     
 import axios from "axios";
 
+const apiKey = "AIzaSyBbQagiDTkD8IJvVCyjYZy0JXNphEztxqc";
+
 export default {
-  // Searches the NYT books according to the search criteria given in the form
-  getNewBooks: function(title) {
-    return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + title);
+
+  searchBooks: function (term) {
+    return axios.get(`https://www.googleapis.com/books/v1/volumes?`, {
+      params: {
+        key: apiKey,
+        q: term,
+        maxResults: 10
+      }
+    })
   },
-  // Gets saved Books
-  getSavedBooks: function() {
-    return axios.get("/api/books/");
+  // Gets all books
+  getBooks: function () {
+    return axios.get("/api/books");
   },
-  // Deletes the Book with the given id
-  deleteBook: function(id) {
+  // Gets the book with the given id
+  getBook: function (id) {
+    return axios.get("/api/books/" + id);
+  },
+  // Deletes the book with the given id
+  deleteBook: function (id) {
     return axios.delete("/api/books/" + id);
   },
-  // Saves a Book to the database
-  saveBook: function(bookData) {
+  // Saves a book to the database
+  saveBook: function (bookData) {
     return axios.post("/api/books", bookData);
   }
 };
