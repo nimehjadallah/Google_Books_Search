@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./components/Nav";
+import SearchForm from "./components/SearchForm"
 import "./App.css"
 
 function App() {

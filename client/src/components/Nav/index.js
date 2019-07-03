@@ -8,6 +8,9 @@ function Nav() {
             </a>
             <div id="navbarNav">
                 <ul className="navbar-nav">
+                <li className="nav-item" id="report">
+                        <a className="nav-link" href="/"><button type="button" className="btn btn-warning text-white">Search</button></a>
+                    </li>
                     <li className="nav-item" id="report">
                         <a className="nav-link" href="/saved"><button type="button" className="btn btn-warning text-white">Saved Books</button></a>
                     </li>
