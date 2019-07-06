@@ -8,14 +8,12 @@ import Saved from './pages/Saved';
 function App() {
   return (
     <Router>
-      <>
         {/* <Nav /> */}
         <Switch>
           <Route exact path="/" component={Books} />
           <Route exact path="/saved" component={Saved} />
           <Route path="*" component={NoMatch} />
         </Switch>
-      </>
     </Router>
   );
 }
